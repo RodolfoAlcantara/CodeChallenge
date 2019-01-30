@@ -55,6 +55,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="imgPrincipalImage" destination="WCb-Rb-6jB" id="TCO-o5-vJa"/>
                                             <outlet property="lblTitleImage" destination="lS6-uY-JTm" id="pOg-0H-VNS"/>
                                         </connections>
                                     </tableViewCell>

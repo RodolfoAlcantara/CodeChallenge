@@ -25,6 +25,9 @@
                value = "image">
             </PersistentString>
             <PersistentString
+               value = "image.link">
+            </PersistentString>
+            <PersistentString
                value = "image.description">
             </PersistentString>
          </PersistentStrings>

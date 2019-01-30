@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ Main protocol to recieve data
+ */
 public protocol ServiceProtocol {
     func didRecieveEntity<T>(serviceName: WSNAME, entity: T)
 }

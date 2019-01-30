@@ -9,13 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    ///Principal outlet for TableView
     @IBOutlet weak var tableViewImages: UITableView!
+    ///Variable to access to the model
     internal var viewModel = TableViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         let request = RequestImage(page: 1, nameToSearch: "cats")
         takeImagesFromServer(request: request)
     }
+    /**
+     Function to create a request for the image API
+     - parameters:
+     - request: Struct with the page and the word to search
+     */
     func takeImagesFromServer(request: RequestImage) {
         let facade = WSImageFacade()
         facade.serviceProtocolDelegate = self
@@ -24,6 +31,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.cells.count
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = viewModel.cells[indexPath.row]
         guard let cell = tableViewImages.dequeueReusableCell(withIdentifier: type(of: item).reuseId) else { return UITableViewCell() }
@@ -31,6 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
 }
+
 extension ViewController: ServiceProtocol {
     func didRecieveEntity<T>(serviceName: WSNAME, entity: T) {
         switch serviceName {

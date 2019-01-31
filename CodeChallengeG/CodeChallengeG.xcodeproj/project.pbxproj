@@ -20,6 +20,8 @@
 		5A64F8842201286F003A2949 /* WSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64F8832201286F003A2949 /* WSConstants.swift */; };
 		5A64F88722012A39003A2949 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64F88622012A39003A2949 /* ServiceProtocol.swift */; };
 		5A64F88A22012A8E003A2949 /* WSImageFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64F88922012A8E003A2949 /* WSImageFacade.swift */; };
+		5A80EB8A2202A63A00972AF7 /* ImageDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80EB892202A63A00972AF7 /* ImageDisplayViewController.swift */; };
+		5A80EB8D2202A9F000972AF7 /* ImageDisplayRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80EB8C2202A9F000972AF7 /* ImageDisplayRouting.swift */; };
 		ACF3094315F616C82F02A68A /* Pods_CodeChallengeG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6092A4A179F5D6638508CAA /* Pods_CodeChallengeG.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		5A64F8832201286F003A2949 /* WSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSConstants.swift; sourceTree = "<group>"; };
 		5A64F88622012A39003A2949 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 		5A64F88922012A8E003A2949 /* WSImageFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSImageFacade.swift; sourceTree = "<group>"; };
+		5A80EB892202A63A00972AF7 /* ImageDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDisplayViewController.swift; sourceTree = "<group>"; };
+		5A80EB8C2202A9F000972AF7 /* ImageDisplayRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDisplayRouting.swift; sourceTree = "<group>"; };
 		A9F46F4359D8BD909A8FB27E /* Pods-CodeChallengeG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallengeG.debug.xcconfig"; path = "Target Support Files/Pods-CodeChallengeG/Pods-CodeChallengeG.debug.xcconfig"; sourceTree = "<group>"; };
 		E6092A4A179F5D6638508CAA /* Pods_CodeChallengeG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeChallengeG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,13 +98,12 @@
 		5A64F85F2201077E003A2949 /* CodeChallengeG */ = {
 			isa = PBXGroup;
 			children = (
+				5A80EB8B2202A9D000972AF7 /* Routing */,
+				5A80EB832202A4B700972AF7 /* UI */,
+				5A80EB8222029C4F00972AF7 /* Controllers */,
 				5A64F87E2201243D003A2949 /* WebService */,
 				5A64F87522010F9B003A2949 /* Table */,
 				5A64F8602201077E003A2949 /* AppDelegate.swift */,
-				5A64F8622201077E003A2949 /* ViewController.swift */,
-				5A64F8642201077E003A2949 /* Main.storyboard */,
-				5A64F8672201077F003A2949 /* Assets.xcassets */,
-				5A64F8692201077F003A2949 /* LaunchScreen.storyboard */,
 				5A64F86C2201077F003A2949 /* Info.plist */,
 			);
 			path = CodeChallengeG;
@@ -184,6 +187,57 @@
 			path = Facade;
 			sourceTree = "<group>";
 		};
+		5A80EB8222029C4F00972AF7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A64F8622201077E003A2949 /* ViewController.swift */,
+				5A80EB892202A63A00972AF7 /* ImageDisplayViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5A80EB832202A4B700972AF7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5A80EB862202A4E900972AF7 /* Screens */,
+				5A80EB852202A4D000972AF7 /* Assets */,
+				5A80EB842202A4C200972AF7 /* Storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5A80EB842202A4C200972AF7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5A64F8642201077E003A2949 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5A80EB852202A4D000972AF7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5A64F8672201077F003A2949 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5A80EB862202A4E900972AF7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5A64F8692201077F003A2949 /* LaunchScreen.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5A80EB8B2202A9D000972AF7 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				5A80EB8C2202A9F000972AF7 /* ImageDisplayRouting.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,6 +318,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-CodeChallengeG/Pods-CodeChallengeG-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -271,6 +326,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -311,7 +367,9 @@
 				5A64F87B220119E7003A2949 /* TableViewModel.swift in Sources */,
 				5A64F8842201286F003A2949 /* WSConstants.swift in Sources */,
 				5A64F8812201249F003A2949 /* ConnectionManager.swift in Sources */,
+				5A80EB8D2202A9F000972AF7 /* ImageDisplayRouting.swift in Sources */,
 				5A64F88A22012A8E003A2949 /* WSImageFacade.swift in Sources */,
+				5A80EB8A2202A63A00972AF7 /* ImageDisplayViewController.swift in Sources */,
 				5A64F8632201077E003A2949 /* ViewController.swift in Sources */,
 				5A64F88722012A39003A2949 /* ServiceProtocol.swift in Sources */,
 				5A64F8792201124A003A2949 /* Entities.swift in Sources */,

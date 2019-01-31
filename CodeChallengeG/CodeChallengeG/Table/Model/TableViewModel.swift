@@ -2,7 +2,7 @@
 //  TableViewModel.swift
 //  CodeChallengeG
 //
-//  Created by Rodolfo Alcantara on 1/29/19.
+//  Created by Rodolfo Alcantara on 1/30/19.
 //  Copyright © 2019 rodolfo. All rights reserved.
 //
 

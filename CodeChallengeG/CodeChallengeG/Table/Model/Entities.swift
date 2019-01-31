@@ -2,7 +2,7 @@
 //  Entities.swift
 //  CodeChallengeG
 //
-//  Created by Rodolfo Alcantara on 1/29/19.
+//  Created by Rodolfo Alcantara on 1/30/19.
 //  Copyright © 2019 rodolfo. All rights reserved.
 //
 
@@ -20,6 +20,8 @@ public struct RequestImage {
     }
 }
 
+import Foundation
+
 struct ImageDataResponse: Codable {
     let data: [Datum]
     let success: Bool
@@ -27,31 +29,31 @@ struct ImageDataResponse: Codable {
 }
 
 struct Datum: Codable {
-    let id: String
+    let id: String?
     let title, description: String?
-    let datetime: Int
+    let datetime: Int?
     let cover: String?
     let coverWidth, coverHeight: Int?
     let accountURL: String?
     let accountID: Int?
-    let privacy: Privacy?
-    let layout: Layout?
-    let views: Int
-    let link: String
+    let privacy: String?
+    let layout: String?
+    let views: Int?
+    let link: String?
     let ups, downs, points, score: Int?
     let isAlbum: Bool?
     let vote: JSONNull?
-    let favorite: Bool
+    let favorite: Bool?
     let nsfw: Bool?
     let section: String?
     let commentCount, favoriteCount: Int?
-    let topic: Topic?
+    let topic: String?
     let topicID, imagesCount: Int?
-    let inGallery, isAd: Bool
-    let tags: [Tag]
-    let adType: Int
-    let adURL: String
-    let inMostViral: Bool
+    let inGallery, isAd: Bool?
+    let tags: [Tag]?
+    let adType: Int?
+    let adURL: String?
+    let inMostViral: Bool?
     let includeAlbumAds: Bool?
     let images: [Datum]?
     let type: TypeEnum?
@@ -104,24 +106,28 @@ enum Privacy: String, Codable {
 }
 
 struct Processing: Codable {
-    let status: Status
+    let status: Status?
 }
 
 enum Status: String, Codable {
     case completed = "completed"
 }
 
+enum Section: String, Codable {
+    case aww = "aww"
+    case empty = ""
+}
+
 struct Tag: Codable {
-    let name, displayName: String
-    let followers, totalItems: Int
-    let following: Bool
-    let backgroundHash: String
-    let thumbnailHash: JSONNull?
-    let accent: String?
-    let backgroundIsAnimated, thumbnailIsAnimated, isPromoted: Bool
-    let description: String
+    let name, displayName: String?
+    let followers, totalItems: Int?
+    let following: Bool?
+    let backgroundHash: String?
+    let thumbnailHash, accent: String?
+    let backgroundIsAnimated, thumbnailIsAnimated, isPromoted: Bool?
+    let description: String?
     let logoHash, logoDestinationURL: JSONNull?
-    let descriptionAnnotations: DescriptionAnnotations
+    let descriptionAnnotations: DescriptionAnnotations?
     
     enum CodingKeys: String, CodingKey {
         case name

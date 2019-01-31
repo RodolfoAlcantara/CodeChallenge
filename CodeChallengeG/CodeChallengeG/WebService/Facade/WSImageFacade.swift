@@ -2,7 +2,7 @@
 //  WSImageFacade.swift
 //  CodeChallengeG
 //
-//  Created by Rodolfo Alcantara on 1/29/19.
+//  Created by Rodolfo Alcantara on 1/30/19.
 //  Copyright © 2019 rodolfo. All rights reserved.
 //
 import Foundation
@@ -13,6 +13,7 @@ import Foundation
 public class WSImageFacade: NSObject, WSDelegate {
     ///Service protocol
     public var serviceProtocolDelegate: ServiceProtocol?
+    // MARK: - WebService functions
     /**
      Function to request data from the api
      - parameters:

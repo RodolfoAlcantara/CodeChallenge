@@ -2,7 +2,7 @@
 //  CommonCells.swift
 //  CodeChallengeG
 //
-//  Created by Rodolfo Alcantara on 1/29/19.
+//  Created by Rodolfo Alcantara on 1/30/19.
 //  Copyright © 2019 rodolfo. All rights reserved.
 //
 
@@ -25,14 +25,14 @@ class ImageCell: UITableViewCell, ConfigurableCell {
     func configure(data image: Datum) {
         self.lblTitleImage.text = image.title ?? image.description ?? "Not Titled"
         setImage(imageData: image)
-    }
+    }    
     /**
      Function to set imagen and distinguish if its a video or an image
      - parameters:
      - imageData: Type data with image information
      */
     func setImage(imageData: Datum) {
-        guard let url = URL(string: imageData.link) else { return }
+        guard let url = URL(string: imageData.link ?? "") else { return }
         if imageData.type == TypeEnum.videoMp4 {
             guard let imageVideo = thumbnailForVideoAtURL(url: url) else { return }
             self.imgPrincipalImage.image = imageVideo

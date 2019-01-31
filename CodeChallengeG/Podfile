@@ -8,4 +8,5 @@ target 'CodeChallengeG' do
   # Pods for CodeChallengeG
   pod 'Alamofire'
   pod 'AlamofireImage'
+  pod 'SVProgressHUD'
 end

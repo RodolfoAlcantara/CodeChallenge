@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ImageCell.configure(data:):CommonCells.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "image">
+            </PersistentString>
+            <PersistentString
+               value = "image.description">
+            </PersistentString>
+            <PersistentString
+               value = "image.link">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ImageDisplayViewController.setStyles():ImageDisplayViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageToShow">
+            </PersistentString>
+            <PersistentString
+               value = "lblTitle">
+            </PersistentString>
+            <PersistentString
+               value = "titleImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ImageDisplayViewController.viewDidLoad():ImageDisplayViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "titleImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.tableView(_:numberOfRowsInSection:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewModel.cells.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static ImageDisplayRouting.toShowImageRouting(title:image:fromViewController:):ImageDisplayRouting.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageDisplay.titleImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.tableView(_:cellForRowAt:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewModel.cells[indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.didRecieveEntity&lt;A&gt;(serviceName:entity:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewModel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

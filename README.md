@@ -1,15 +1,15 @@
 # CodeChallenge
 
-CodeChallenge is a project of Globant
-The main project contains the "Image searcher test", that it's a simple image searcher.
+CodeChallenge is a project of Globant__
+The main project contains the "Image searcher test", that it's a simple image searcher.__
 
 # Process 
-1.- We need to request the data to imagur's API.
-2.- Parse and sort the information to access the data.
-3.- Show the information given by the API. (ViewInjection)
-4.- Show the detail of the individual objects.
+1.- We need to request the data to imagur's API.__
+2.- Parse and sort the information to access the data.__
+3.- Show the information given by the API. (ViewInjection)__
+4.- Show the detail of the individual objects.__
 
 # Pods
-1.- Alamofire
-2.- AlamofireImage
-3.- SVProgressHUD
+1.- Alamofire__
+2.- AlamofireImage__
+3.- SVProgressHUD__
